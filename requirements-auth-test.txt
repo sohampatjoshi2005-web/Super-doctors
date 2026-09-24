@@ -1,0 +1,13 @@
+# Minimal deps to run test_auth_server.py — just login/auth, no AI/ML stack.
+# None of these need native compilation on macOS, so this avoids the
+# pkg-config / PyAV / ctranslate2 build issues from the full requirements.txt.
+
+fastapi>=0.110.0
+uvicorn>=0.25.0
+sqlmodel>=0.0.22
+pydantic>=2.7.0
+pydantic-settings>=2.2.1
+bcrypt
+python-jose[cryptography]>=3.3.0
+email-validator>=2.0.0
+python-dotenv>=0.21.0
